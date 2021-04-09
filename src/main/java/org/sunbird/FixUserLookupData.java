@@ -14,6 +14,7 @@ import java.util.Set;
 import org.apache.commons.lang3.StringUtils;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+import org.sunbird.util.CassandraConnection;
 
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;

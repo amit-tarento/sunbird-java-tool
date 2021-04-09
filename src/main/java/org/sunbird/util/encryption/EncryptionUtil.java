@@ -1,4 +1,4 @@
-package org.sunbird;
+package org.sunbird.util.encryption;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -21,8 +21,7 @@ import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.lang3.StringUtils;
-import org.sunbird.util.encryption.BASE64Decoder;
-import org.sunbird.util.encryption.BASE64Encoder;
+import org.sunbird.util.CassandraConnection;
 
 import com.datastax.driver.core.ResultSet;
 import com.datastax.driver.core.Row;

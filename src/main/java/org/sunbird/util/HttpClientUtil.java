@@ -114,13 +114,13 @@ public class HttpClientUtil {
 				HttpEntity httpEntity = response.getEntity();
 				byte[] bytes = EntityUtils.toByteArray(httpEntity);
 				StatusLine sl = response.getStatusLine();
-				System.out.println("Response from patch call : " + sl.getStatusCode() + " - " + sl.getReasonPhrase());
+				System.out.println("Response from post call : " + sl.getStatusCode() + " - " + sl.getReasonPhrase());
 				return new String(bytes);
 			} else {
 				return "";
 			}
 		} catch (Exception ex) {
-			System.out.println("Exception occurred while calling patch method");
+			System.out.println("Exception occurred while calling post method");
 			ex.printStackTrace();
 			return "";
 		} finally {
@@ -128,7 +128,7 @@ public class HttpClientUtil {
 				try {
 					response.close();
 				} catch (Exception ex) {
-					System.out.println("Exception occurred while closing patch response object");
+					System.out.println("Exception occurred while closing post response object");
 				}
 			}
 		}
